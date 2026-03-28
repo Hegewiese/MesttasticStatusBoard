@@ -41,21 +41,26 @@ def check_python_version():
 
 def check_meshtastic_installation():
     """Check if Meshtastic Python module is installed."""
+    # Simple approach: just try to import it
     try:
-        spec = importlib.util.find_spec("meshtastic")
-        if spec is None:
-            print("✗ Meshtastic Python module is NOT installed")
-            print("  Install it with: pip install meshtastic")
-            return False
-
-        version = "unknown"
+        import meshtastic
+        
+        # Get version
+        version = getattr(meshtastic, '__version__', 'unknown')
+        
+        # Also try importlib.metadata for better version info
         try:
+            import importlib.metadata
             version = importlib.metadata.version("meshtastic")
-        except importlib.metadata.PackageNotFoundError:
-            pass
-
+        except Exception:
+            pass  # Keep the version from getattr
+        
         print(f"✓ Meshtastic Python module is installed (version: {version})")
         return True
+    except ImportError:
+        print("✗ Meshtastic Python module is NOT installed")
+        print("  Install it with: pip install meshtastic")
+        return False
     except Exception as e:
         print(f"✗ Error checking Meshtastic installation: {e}")
         return False
@@ -167,7 +172,7 @@ def main():
             print(f"  - {req}")
 
     missing = []
-    if not python_ok:2
+    if not python_ok:
         missing.append("Python is not properly installed")
     if not meshtastic_py_ok:
         missing.append("Meshtastic Python module is not installed")

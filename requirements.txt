@@ -1,0 +1,5 @@
+meshtastic>=2.7.8
+pyserial>=3.5
+requests>=2.25.0
+tabulate>=0.9.0
+pyyaml>=6.0
