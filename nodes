@@ -1,0 +1,16 @@
+Bekannte Meshtastic Nodes
+# Format: Adresse # Kommentar
+
+# Hegewiese 
+#HEHO_ab07  # Test Node 1
+#E6:63:E5:E8:AB:07  # MAC-Adresse Format
+#E663E5E8AB07  # MAC ohne Doppelpunkte
+
+# Hegewiese Mobil
+HEMO_cb7e
+C7:C8:96:F3:CB:7E
+C7c896f3cb7e
+
+# Weitere Nodes können hier hinzugefügt werden
+# Beispiel: !12345678  # Node ID Format
+# Beispiel: 192.168.1.100:4403  # TCP/IP Verbindung
