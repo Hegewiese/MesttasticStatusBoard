@@ -6,7 +6,6 @@ Checks for required installations and provides status information.
 
 import sys
 import subprocess
-import importlib.util
 import importlib.metadata
 import os
 

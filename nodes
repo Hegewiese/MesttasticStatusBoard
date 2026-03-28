@@ -1,4 +1,3 @@
-Bekannte Meshtastic Nodes
 # Format: Adresse # Kommentar
 
 # Hegewiese 
@@ -6,10 +5,11 @@ Bekannte Meshtastic Nodes
 #E6:63:E5:E8:AB:07  # MAC-Adresse Format
 #E663E5E8AB07  # MAC ohne Doppelpunkte
 
-# Hegewiese Mobil
-HEMO_cb7e
-C7:C8:96:F3:CB:7E
-C7c896f3cb7e
+# Known Nodes
+E6:63:E5:E8:AB:07 #HEHO_ab07
+C7:C8:96:F3:CB:7E #HEMO_cb7e Hegewiese Mobil
+AC:A7:04:3A:5D:91 #BDH1 by Tasko
+#xx.xx.xx.xx.2F.58
 
 # Weitere Nodes können hier hinzugefügt werden
 # Beispiel: !12345678  # Node ID Format
