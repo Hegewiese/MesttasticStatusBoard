@@ -1,4 +1,4 @@
-# DEPRECATED, DO NOT USE
+# KAPUTT, DO NOT USE
 # Meshtastic Status Board
 
 A Linux CLI tool for managing and interacting with [Meshtastic](https://meshtastic.org/) LoRa mesh radio nodes. It discovers nearby devices, maintains a list of known nodes, tests connections (including BLE pairing), and can send scheduled messages through a node.
